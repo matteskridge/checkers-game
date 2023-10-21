@@ -1,0 +1,42 @@
+
+.checkers-gameover-wrap {
+  position: relative;
+}
+
+.checkers-gameover {
+  width: 33.5rem;
+  height: 33.5rem;
+  background: #00000033;
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 12rem;
+}
+
+.checkers-gameover-text {
+  font-size: 3rem;
+  text-shadow: 0 .125rem 0 white;
+}
+
+.checkers-gameover-actions {
+  padding-top: 1rem;
+}
+
+.checkers-gameover-action {
+  background: white;
+  color: black;
+  box-shadow: 0 .125rem .125rem black;
+  display: inline-block;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  border-radius: .25rem;
+}
+
+@media screen and (max-width: 800px) {
+  .checkers-gameover {
+    width: 21.5rem;
+    height: 21.5rem;
+    padding-top: 7rem;
+  }
+}

@@ -1,0 +1,33 @@
+
+.checkers-board-traveler-wrap {
+  position: relative;
+}
+
+.checkers-board-traveler {
+  background: black;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-image: url("../../images/tesla-white.png");
+  background-size: 2rem 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: red;
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.checkers-board-traveler-king {
+  background-image: url("../../images/crown.png");
+}
+
+@media screen and (max-width: 800px) {
+  .checkers-board-traveler {
+    width: 2rem;
+    height: 2rem;
+    padding: .125rem;
+    background-size: 1.25rem 1.25rem;
+    box-sizing: border-box;
+  }
+}

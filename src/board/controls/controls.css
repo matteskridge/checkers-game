@@ -1,0 +1,14 @@
+
+.checkers-controls {
+  padding: .5rem 0;
+}
+
+.checkers-control-button {
+  appearance: none;
+  background: none;
+  border: none;
+  color: #777777;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: 1rem;
+}

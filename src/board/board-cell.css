@@ -1,0 +1,41 @@
+
+.checkers-board-cell {
+  background: #EEEEEE;
+}
+
+.checkers-board-cell-inner {
+  width: 4rem;
+  height: 4rem;
+  padding: .5rem;
+  box-sizing: border-box;
+}
+
+.checkers-board-cell-shaded {
+  background: white;
+}
+
+.checkers-board-cell-inner-highlighted {
+  background: #B1E2EF;
+  box-shadow: inset 0 0 .2rem .2rem #97E9FF;
+  opacity: 0;
+  animation: fadeInAnimation 0.5s forwards;
+  z-index: 1;
+}
+
+.checkers-board-cell-dragging .checkers-entity {
+  opacity: 0.2;
+}
+
+@keyframes fadeInAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media screen and (max-width: 800px) {
+  .checkers-board-cell-inner {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: .25rem;
+    box-sizing: border-box;
+  }
+}

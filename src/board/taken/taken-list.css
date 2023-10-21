@@ -1,0 +1,15 @@
+
+.checkers-board-taken-list {
+  flex: 0 0 8rem;
+  padding: 0 1rem;
+}
+
+.checkers-board-taken-list-entity {
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+.checkers-board-taken-list-entity .checkers-entity-playera {
+  cursor: default;
+}

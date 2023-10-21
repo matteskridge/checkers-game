@@ -1,0 +1,62 @@
+
+.checkers-dialog {
+  padding-top: 1rem;
+  height: 10rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.checkers-dialog-entry-wrap {
+  display: flex;
+}
+
+.checkers-dialog-entry-wrap.checkers-dialog-playera {
+  padding-left: 5rem;
+  padding-right: 2.5rem;
+  flex-direction: row-reverse;
+}
+
+.checkers-dialog-entry-wrap.checkers-dialog-playerb {
+  padding-right: 5rem;
+  padding-left: 2.5rem;
+  flex-direction: row;
+}
+
+.checkers-dialog-entry-wrap.checkers-dialog-playera .checkers-dialog-entry-avatar {
+  padding-left: .5rem;
+}
+
+.checkers-dialog-entry-wrap.checkers-dialog-playerb .checkers-dialog-entry-avatar {
+  padding-right: .5rem;
+}
+
+.checkers-dialog-entry-avatar img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.checkers-dialog-entry {
+  border-radius: .5rem;
+  background: #EAEAEA;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.checkers-dialog-playera .checkers-dialog-entry {
+  background: blue;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .checkers-dialog-entry-wrap.checkers-dialog-playera {
+    padding-right: 1rem;
+    flex-direction: row-reverse;
+  }
+  
+  .checkers-dialog-entry-wrap.checkers-dialog-playerb {
+    padding-left: 1rem;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,17 @@
+
+.checkers-board-wrap {
+  padding: 1rem;
+  user-select: none;
+}
+
+.checkers-board-border {
+  border: 7px solid #EEEEEE;
+}
+
+.checkers-board {
+  border: 5px solid transparent;
+}
+
+.checkers-board-row {
+  display: flex;
+}

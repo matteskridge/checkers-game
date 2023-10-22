@@ -1,6 +1,6 @@
 # Checkers
 
-![docs/docs1.png]
+![docs/docs1.png](Screenshot of checkers app)
 
 This app implements a complete checkers game on desktop and mobile
 

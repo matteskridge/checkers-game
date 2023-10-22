@@ -49,10 +49,6 @@ export const AllDialogue: Dialogue[] = [
     playerB: 'We do! We do!',
   },
   {
-    playerA: 'My IQ is 150',
-    playerB: 'My IQ is ... between 1 and 50',
-  },
-  {
     playerA: 'Checkers is humanity\'s collective consciousness',
     playerB: 'Cadillac and chevy only play chess, Jack',
   },

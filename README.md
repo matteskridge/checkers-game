@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# Checkers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![docs/docs1.png]
 
-## Available Scripts
+This app implements a complete checkers game on desktop and mobile
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+The app can be accessed live at: https://checkers.matteskridge.com
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Running Locally
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The app can be run locally with:
 
-### `npm test`
+```sh
+npm i
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Feature List
 
-### `npm run build`
+* Basic game mechanics
+  * Taking turns
+  * Basic moves
+  * Jump over enemy checkers
+* Advanced game mechanics
+  * Multiple jumps in one turn
+  * Kings
+* Drag-n-drop checkers using a mouse
+  * Additional ways to control the game (on mobile): tap a checker, then the square to move to
+* On mouse over checker, highlight cells where a checker can possibly move to
+* If there is an opportunity to capture an enemy checker - it is the only valid move
+* No-brain AI player: makes a random move to any valid cell
+* App is stable across major browsers
+* Undo button to revert last move
+* Start over button to clear state
+* Victory / defeat banner
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Implementation details:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Implemented in Typescript
+* Includes some unit tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Unit Tests
 
-### `npm run eject`
+The following tests are included in this project:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* `src/model/__tests__/game-dialogue.test.ts`
+* `src/model/__tests__/game-move.test.ts`
+* `src/model/__tests__/game-state.test.ts`
+* `src/model/__tests__/game-util.test.ts`
+* `src/model/__tests__/game-util.test.ts`
+* `src/board/entity/__tests__/entity.test.ts`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+These are included more as an example than to provide comprehensive coverage, due to time constraints.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Tests can be run with:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+`npm run test`

@@ -92,6 +92,6 @@ export const appendDialogue = (source: Dialogue, dialogue: DialogueEntry[]): Dia
 }
 
 export const stepDialogue = (dialogue: DialogueEntry[]): DialogueEntry[] => {
-  const randomIndex = Math.floor(randomNumber() * (AllDialogue.length - 1));
+  const randomIndex = Math.round(randomNumber() * (AllDialogue.length - 1));
   return appendDialogue(AllDialogue[randomIndex], dialogue);
 }

@@ -34,20 +34,21 @@
 
 @media screen and (max-width: 800px) {
   .checkers-entity-piece, .checkers-entity-king {
-    width: 2rem;
-    height: 2rem;
+    width: 8vw;
+    height: 8vw;
     padding: .125rem;
     box-sizing: border-box;
   }
 
   .checkers-entity-playera, .checkers-entity-playerb {
-    background-size: 1.25rem 1.25rem;
+    background-size: 5vw;
   }
 
   .checkers-entity-playerb {
-    background-size: 1rem 1rem;
+    background-size: 4vw;
   }
+
   .checkers-entity.checkers-entity-king {
-    background-size: 1.25rem;
+    background-size: 5vw;
   }
 }

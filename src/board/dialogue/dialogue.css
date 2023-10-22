@@ -2,7 +2,7 @@
 .checkers-dialog {
   padding-top: 1rem;
   height: 10rem;
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -58,5 +58,9 @@
   .checkers-dialog-entry-wrap.checkers-dialog-playerb {
     padding-left: 1rem;
     flex-direction: row;
+  }
+
+  .checkers-dialog {
+    height: 14rem;
   }
 }

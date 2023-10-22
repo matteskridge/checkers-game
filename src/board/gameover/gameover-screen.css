@@ -35,8 +35,8 @@
 
 @media screen and (max-width: 800px) {
   .checkers-gameover {
-    width: 21.5rem;
-    height: 21.5rem;
+    width: 87vw;
+    height: 86vw;
     padding-top: 7rem;
   }
 }

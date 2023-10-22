@@ -33,9 +33,9 @@
 
 @media screen and (max-width: 800px) {
   .checkers-board-cell-inner {
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: .25rem;
+    width: 10vw;
+    height: 10vw;
+    padding: 1vw;
     box-sizing: border-box;
   }
 }
